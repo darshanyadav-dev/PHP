@@ -1,15 +1,15 @@
 <?php
 
 //declaring a function
-function happy_birthday(){
+function happy_birthday($name){
 echo "Happy Birthday to you,<br>
 Happy Birthday to you,<br>
-Happy Birthday, dear Darshan,<br>
+Happy Birthday, dear {$name},<br>
 Happy Birthday to you.<br>";
 }
- 
-for ($i=0;$i<=5;$i++){
-    happy_birthday();
-    echo "<br> ";
-}
+
+happy_birthday("Darshan")<br>
+happy_birthday("Krishna")<br>
+happy_birthday("Kaksh")<br>
+happy_birthday("Om");
 ?>
