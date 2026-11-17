@@ -3,7 +3,9 @@ $capitals = array("USA" => "Washington D.C.", "India" => "New Delhi", "Pakistan"
 
 $capitals["United Kingdom"] = "London";
 
-foreach ($capitals as $key => $value) {
-    echo "{$value} is capital of {$key}. <br><br>";
+$keys = array_keys($capitals);
+foreach ($keys as $key) {
+    echo "{$key}" . "<br>";
 }
+
 ?>
